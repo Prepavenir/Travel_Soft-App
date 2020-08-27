@@ -1,9 +1,9 @@
 {
-  "short_name": "travel_soft_app",
-  "name": "travel_soft_app",
+  "short_name": "Travel Soft App",
+  "name": "Travel Soft App",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
