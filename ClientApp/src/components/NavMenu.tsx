@@ -14,7 +14,7 @@ export default class NavMenu extends React.PureComponent<{}, { isOpen: boolean }
             <header>
                 <Navbar className="navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" light>
                     <Container>
-                        <NavbarBrand tag={Link} to="/"><img src={logo} width="84" height="64" alt="TravelSoft logo" /></NavbarBrand>
+                        <NavbarBrand tag={Link} to="/"><img src={logo} width="104" height="64" alt="TravelSoft logo" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggle} className="mr-2"/>
                         <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={this.state.isOpen} navbar>
                             <ul className="navbar-nav flex-grow">
@@ -22,10 +22,10 @@ export default class NavMenu extends React.PureComponent<{}, { isOpen: boolean }
                                     <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink tag={Link} className="text-dark" to="/counter">Iznajmljivač</NavLink>
+                                    <NavLink tag={Link} className="text-dark" to="/renters">Iznajmljivač</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink tag={Link} className="text-dark" to="/fetch-data">Gost</NavLink>
+                                    <NavLink tag={Link} className="text-dark" to="/guest-list">Popis gostiju</NavLink>
                                 </NavItem>
                             </ul>
                         </Collapse>
