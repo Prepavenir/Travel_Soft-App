@@ -7,11 +7,10 @@ namespace travel_soft_app
 {
     public class DonationDBContext : DbContext
     {
-        public DonationDBContext(DbContextOptions<DonationDBContext> options)
+        public DonationDBContext(Microsoft.EntityFrameworkCore.DbContextOptions options)
             : base(options)
         {
         }
-
         public DbSet<GuestList> GuestLists { get; set; }
     }
 }

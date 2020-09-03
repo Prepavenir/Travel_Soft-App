@@ -28,9 +28,11 @@ namespace travel_soft_app
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
-            //services.AddDbContext.DonationDBContext(Options =>
-            //Options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            services.AddScoped<DonationDBContext>(_ => 
+                new DonationDBContext(Configuration.GetConnectionString("DevConnection")));
+                                
+            //services.AddDbContext.DonationDBContext(options =>
+            //options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

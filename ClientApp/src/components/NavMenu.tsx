@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import logo from '../travelsoft-logo.png';
+import logo from '../images/travelsoft-logo.png';
 import './NavMenu.css';
 
 export default class NavMenu extends React.PureComponent<{}, { isOpen: boolean }> {
