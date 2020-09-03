@@ -7,7 +7,7 @@ namespace travel_soft_app
 {
     public class DonationDBContext : DbContext
     {
-        public DonationDBContext(Microsoft.EntityFrameworkCore.DbContextOptions options)
+        public DonationDBContext(DbContextOptions<DonationDBContext> options)
             : base(options)
         {
         }

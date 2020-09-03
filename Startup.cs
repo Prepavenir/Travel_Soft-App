@@ -28,8 +28,9 @@ namespace travel_soft_app
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<DonationDBContext>(_ => 
-                new DonationDBContext(Configuration.GetConnectionString("DevConnection")));
+            services.AddDbContext<DonationDBContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DevConnection"))
+            );
                                 
             //services.AddDbContext.DonationDBContext(options =>
             //options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
